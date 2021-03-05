@@ -19,40 +19,6 @@ const wm = [
 //========================
 // Cell Filling Function
 //========================
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-function fills(cts) {
-  if (!gameAc) {
-    return;
-  }
-
-  let check = document.getElementById(cts.id).innerHTML;
-  console.log(gs);
-  if (check == "") {
-    if (count % 2 != 0) {
-      //arr.splice(cts.id - 1, 1);
-      arr.splice(arr.indexOf(cts.id - 1) + 1, 1);
-      console.log(cts.id - 1);
-      document.getElementById(cts.id).innerHTML = "X";
-      cp = "X";
-      gs[cts.id - 1] = cp;
-      checkWin();
-    } else {
-      let num = arr[Math.ceil(Math.random() * arr.length)];
-      arr.splice(arr.indexOf(num), 1);
-      console.log(num);
-      // console.log(arr);
-
-      if (gs[num - 1] == "") {
-        document.getElementById(num).innerHTML = "0";
-      }
-      cp = "0";
-      gs[num - 1] = cp;
-      checkWin();
-    }
-    console.log(arr);
-    count++;
-  }
-}
 
 function fill(cts) {
   if (!gameAc) {
