@@ -28,11 +28,13 @@ function fill(cts) {
   if (check == "") {
     if (count % 2 != 0) {
       document.getElementById(cts.id).innerHTML = "X";
+      document.getElementById("gameStatus").innerHTML = `0's Turn`;
       cp = "X";
       gs[cts.id - 1] = cp;
       checkWin();
     } else {
       document.getElementById(cts.id).innerHTML = "0";
+      document.getElementById("gameStatus").innerHTML = `X's Turn`;
       cp = "0";
       gs[cts.id - 1] = cp;
       checkWin();
