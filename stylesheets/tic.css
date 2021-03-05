@@ -1,0 +1,73 @@
+body {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(238, 238, 174, 1) 35%,
+    rgba(231, 242, 145, 1) 100%
+  );
+}
+h1 {
+  text-align: center;
+}
+#t1 tr td {
+  width: 150px;
+  height: 150px;
+}
+#t1 {
+  margin: 5px auto;
+  text-align: center;
+  font-size: 4em;
+}
+.vert {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.hori {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#t2 tr td {
+  width: 100px;
+  height: 50px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+#d1 {
+  width: 100%;
+  height: 100%;
+}
+#d2 {
+  margin-top: 10%;
+  width: 70%;
+}
+
+button {
+  background-color: #e65c00;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 15px;
+  margin-top: 15px;
+  transition: linear 0.5s;
+}
+
+button:hover {
+  background-color: greenyellow;
+  border-radius: 20%;
+  transition: linear 0.5s;
+}
+
+#t2 {
+  margin: 5px auto;
+  text-align: center;
+  font-size: 1.5em;
+}
